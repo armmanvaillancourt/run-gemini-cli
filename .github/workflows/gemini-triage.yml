@@ -91,6 +91,9 @@ jobs:
               }
             }
           prompt: '/gemini-triage'
+      - uses: actions/upload-artifact@v4
+        with:
+          path: .gemini/telemetry.log
 
   label:
     runs-on: 'ubuntu-latest'
